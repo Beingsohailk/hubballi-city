@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hubballi City — Local photos, events & businesses</title>
+  <meta name="description" content="Hubballi City — local photos, events, eats and businesses. Follow @hubballi_city on Instagram." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Hubballi City" />
+  <meta property="og:description" content="Local photos, events & businesses from Hubballi. Follow us on Instagram." />
+  <meta property="og:image" content="hero.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="favicon.ico" />
+  <style>
+    :root{--accent:#0f62fe;--max:1100px}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, Arial; margin:0; color:#111}
+    header{background:#f7f8fb;padding:28px 16px;border-bottom:1px solid #eee}
+    .container{max-width:var(--max);margin:0 auto;padding:0 16px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand img{width:56px;height:56px;border-radius:8px;object-fit:cover}
+    h1{margin:6px 0 0;font-size:20px}
+    p.lead{margin:8px 0 16px;color:#444}
+    .grid{display:grid;grid-template-columns:1fr;gap:16px}
+    @media(min-width:720px){ .grid{grid-template-columns:2fr 1fr} }
+    .hero{background:#fff;padding:18px;border-radius:10px;box-shadow:0 4px 14px rgba(15,20,30,0.03)}
+    .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+    @media(min-width:720px){ .gallery{grid-template-columns:repeat(3,1fr)} }
+    .gallery img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+    .card{background:#fff;padding:14px;border-radius:8px;box-shadow:0 2px 8px rgba(15,20,30,0.03)}
+    footer{padding:18px 0;text-align:center;color:#666;font-size:14px}
+    a.btn{display:inline-block;background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none}
+    .small{font-size:13px;color:#666}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container brand">
+      <img src="logo.jpg" alt="Hubballi City logo">
+      <div>
+        <h1>Hubballi City</h1>
+        <p class="small">Local photos, events & businesses — Follow <a href="https://instagram.com/your_instagram" target="_blank">@your_instagram</a></p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding:18px 16px 40px">
+    <div class="grid">
+      <section class="hero card">
+        <h2>Welcome to Hubballi City</h2>
+        <p class="lead">Photos, events, local eats and community stories from Hubballi. Send us your pictures or tag <strong>@your_instagram</strong>.</p>
+        <a class="btn" href="https://instagram.com/your_instagram" target="_blank">Follow on Instagram</a>
+
+        <h3 style="margin-top:18px">Latest photos</h3>
+        <div class="gallery">
+          <img src="city1.jpg" alt="Hubballi street view">
+          <img src="city2.jpg" alt="Local market">
+          <img src="city3.jpg" alt="Temple / landmark">
+          <img src="city4.jpg" alt="Local food">
+          <img src="city5.jpg" alt="Event crowd">
+          <img src="city6.jpg" alt="Sunset view">
+        </div>
+      </section>
+
+      <aside>
+        <div class="card" style="margin-bottom:12px">
+          <h4>About</h4>
+          <p class="small">Hubballi City shares the best of local life: events, food, and small businesses. We repost community photos (with credit).</p>
+        </div>
+
+        <div class="card" style="margin-bottom:12px">
+          <h4>Submit a photo / event</h4>
+          <p class="small">Email: <a href="mailto:sohailbagali768@gmail.com">sohailbagali768@gmail.com</a></p>
+          <p class="small">Or DM on Instagram: <a href="https://instagram.com/your_instagram" target="_blank">@your_instagram</a></p>
+        </div>
+
+        <div class="card">
+          <h4>Contact</h4>
+          <p class="small">Phone / WhatsApp: +91 97xxxxxxxx</p>
+          <p class="small"><a href="privacy.html">Privacy Policy</a></p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container small">
+      © <span id="year"></span> Hubballi City • Built with ❤️ • Follow <a href="https://instagram.com/your_instagram" target="_blank">@your_instagram</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // TODO: Replace photo filenames and Instagram URL with real ones.
+  </script>
+</body>
+</html>
